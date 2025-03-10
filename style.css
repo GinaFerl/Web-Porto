@@ -154,6 +154,10 @@ section {
     transition: 0.2s ease-in-out;
 }
 
+.btn a {
+    color: black;
+}
+
 .btn:hover {
     background-color: black;
     color: white;
@@ -281,6 +285,10 @@ section {
     color: white;
 }
 
+.project-card:hover .btn a{
+    color: white;
+}
+
 .project-card:hover .btn:hover {
     border: 2px solid white;
     background-color: white;
@@ -300,7 +308,7 @@ section {
 .input-box input {
     border-radius: 3rem;
     border: 2px solid black;
-    padding: 2rem 9rem;
+    padding: 2rem 8rem;
     font-size: 3rem;
 }
 
