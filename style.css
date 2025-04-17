@@ -285,13 +285,21 @@ section {
     color: white;
 }
 
-.project-card:hover .btn a{
+.project-card:hover a{
     color: white;
 }
 
 .project-card:hover .btn:hover {
     border: 2px solid white;
     background-color: white;
+    color: black;
+}
+
+.project-card:hover .btn:hover a{
+    color: black;
+}
+
+.project-card:hover a:hover {
     color: black;
 }
 
@@ -326,6 +334,50 @@ section {
     top: 50%;
     left: 10px;
     transform: translate(50%, -50%);
+}
+
+#contact {
+    text-align: center;
+    padding: 40px;
+}
+  
+#contact-form {
+    max-width: 750px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;    
+}
+  
+input, textarea {
+    padding: 1.5rem;
+    border: 2px solid black;
+    border-radius: 1.5rem;
+    font-size: 1.2rem;
+    width: 100%;
+}
+
+button {
+    border-radius: 3rem;
+    padding: 1rem 1.5rem;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-wrap: nowrap;
+    transition: 0.2s ease-in-out;
+}
+  
+button:hover {
+    background-color: white;
+    color: black;
+}
+  
+#status-message {
+    margin-top: 10px;
+    color: green;
+    font-weight: bold;
 }
 
 footer {
