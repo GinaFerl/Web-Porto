@@ -39,3 +39,31 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const githubLink1 = document.getElementById("githubRepoLink");
+  const githubLink2 = document.getElementById("githubRepoLink2");
+
+  if (githubLink1) {
+    githubLink1.addEventListener("click", function (event) {
+      event.preventDefault();
+      alert("Sorry, the Github repository is currently unavailable or private.");
+    });
+  }
+
+  if (githubLink2) {
+    githubLink2.addEventListener("click", function (event) {
+      event.preventDefault();
+      alert("Sorry, the Github repository is currently unavailable or private.");
+    });
+  }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const liveDemoLink = document.getElementById("liveDemoLink");
+
+    liveDemoLink.addEventListener("click", function (event) {
+      event.preventDefault(); // mencegah link default
+      alert("Sorry, the Live Demo is currently unavailable or private.");
+    });
+});
